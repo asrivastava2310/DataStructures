@@ -7,12 +7,12 @@ package cci.arraysandstrings;
 	dictionary words.
 	EXAMPLE
 	Input: Tact Coa
-	Output: True (permutations: "taco cat'; "atc o eta·; etc.)
+	Output: True (permutations: "taco cat'; "atc o etaÂ·; etc.)
  */
 public class PalindromePermutation {
 
 	public static void main(String[] args) {
-		String input = "aabba";// ommmo is one palindormic permutation
+		String input = "aabba";// baaab is one palindormic permutation
 		System.out.println(input + " has any palindormic permutation? - " + isPermutationOfPalindrome(input));
 	}
 
