@@ -29,30 +29,29 @@ public class OneAway {
 		return false;
 	}
 
-
 	private static boolean oneEditReplace(String first, String second) {
 		boolean foundDiff = false;
 		for (int i = 0; i < first.length(); i++) {
-          if(first.charAt(i) != second.charAt(i)) {
-        	  if(foundDiff) {
-        		  return false;
-        	  }
-        	  foundDiff = true;
-          }
+			if (first.charAt(i) != second.charAt(i)) {
+				if (foundDiff) {
+					return false;
+				}
+				foundDiff = true;
+			}
 		}
 		return true;
 	}
-	
+
 	private static boolean oneEditInsert(String first, String second) {
 		int index1 = 0;
 		int index2 = 0;
-		while(index1 < first.length() && index2 < second.length()) {
-			if(first.charAt(index1) != second.charAt(index2)) {
-				if(index1 != index2) {
+		while (index1 < first.length() && index2 < second.length()) {
+			if (first.charAt(index1) != second.charAt(index2)) {
+				if (index1 != index2) {
 					return false;
 				}
 				index2++;
-			}else {
+			} else {
 				index1++;
 				index2++;
 			}

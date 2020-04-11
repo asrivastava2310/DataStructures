@@ -22,10 +22,11 @@ public class URLify {
 		System.out.println("Given String : " + actual);
 		replaceSpaces(input, 13);
 		System.out.println("After repalcing spaces by %20");
-		for(char ch : input ) {
-			System.out.print(ch); //This will print some extra characters according to assumed extra length
+		for (char ch : input) {
+			System.out.print(ch); // This will print some extra characters according to assumed extra length
 		}
 	}
+
 	private static void replaceSpaces(char[] input, int length) {
 
 		// count the spaces

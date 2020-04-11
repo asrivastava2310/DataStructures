@@ -13,7 +13,7 @@ public class StringUniqueness {
 
 	// Assuming String is extended ASCII(0-255) i.e. there are 256 characters
 	private static boolean isUniqueUsingadditionalDataStructure(String input) {
-		if(input.length() > 256) {  //base case
+		if (input.length() > 256) { // base case
 			return false;
 		}
 		boolean[] chars = new boolean[256];

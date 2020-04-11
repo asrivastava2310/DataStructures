@@ -11,7 +11,8 @@ public class CheckPermutation {
 		String first = "god";
 		String second = "dog";
 		System.out.println(first + " is permutaion of " + second + " ? - " + isPermutationUsingSorting(first, second));
-		System.out.println(first + " is permutaion of " + second + " ? - " + isPermutationUsingCharactersCount(first, second));
+		System.out.println(
+				first + " is permutaion of " + second + " ? - " + isPermutationUsingCharactersCount(first, second));
 	}
 
 	// Running time will be proportional to sorting algorithm
@@ -41,10 +42,10 @@ public class CheckPermutation {
 
 		// Now match with second string
 		for (int i = 0; i < second.length(); i++) {
-            letters[second.charAt(i)]--;
-            if(letters[second.charAt(i)] < 0) {
-            	return false;
-            }
+			letters[second.charAt(i)]--;
+			if (letters[second.charAt(i)] < 0) {
+				return false;
+			}
 		}
 		return true;
 	}
