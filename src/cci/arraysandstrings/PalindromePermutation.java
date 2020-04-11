@@ -26,15 +26,15 @@ public class PalindromePermutation {
 		for (int i = 0; i < input.length(); i++) {
 			chars[input.charAt(i)]++;
 		}
-        
+
 		boolean foundOdd = false;
 		for (int i = 0; i < chars.length; i++) {
-               if(chars[i] % 2 != 0) {
-            	   if(foundOdd) {
-            		   return false;
-            	   }
-            	   foundOdd = true;
-               }
+			if (chars[i] % 2 != 0) {
+				if (foundOdd) {
+					return false;
+				}
+				foundOdd = true;
+			}
 		}
 		return true;
 	}
