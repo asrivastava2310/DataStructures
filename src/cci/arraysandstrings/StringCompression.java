@@ -17,12 +17,12 @@ public class StringCompression {
 		StringBuilder compressed = new StringBuilder();
 		int countConsecutive = 0;
 		for (int i = 0; i < input.length(); i++) {
-             countConsecutive++;
-             if(i + 1 >= input.length() || input.charAt(i) != input.charAt(i+1)) {
-            	 compressed.append(input.charAt(i));
-            	 compressed.append(countConsecutive);
-            	 countConsecutive = 0;
-             }
+			countConsecutive++;
+			if (i + 1 >= input.length() || input.charAt(i) != input.charAt(i + 1)) {
+				compressed.append(input.charAt(i));
+				compressed.append(countConsecutive);
+				countConsecutive = 0;
+			}
 		}
 		return compressed.toString();
 	}
